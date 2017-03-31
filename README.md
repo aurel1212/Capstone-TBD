@@ -1,8 +1,7 @@
 
 
-## Medicare payments classifier
-
-Build a recommender system for selecting a provider using Medicare payment data .
+## Provider recommender Medicare
+Build a recommender system for selecting a provider using Medicare payment data.
 
 ## Business Understanding
 Cost of similar medical conditions can vary widely between providers and between regions. The goal is to generate a provider recommender system considering location, medical condition, cost, and provider rating.  The model will be used by the individual customer to identify an optimal provider in term of affordability and rating. In addition data will allow comparative analysis at regional or national levels, conditions to identify outliers (ex: fraudulent claims by provider). 
