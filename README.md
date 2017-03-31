@@ -5,7 +5,6 @@
 Build a recommender system for selecting a provider using Medicare payment data .
 
 ## Business Understanding
-
 Cost of similar medical conditions can vary widely between providers and between regions. The goal is to generate a provider recommender system considering location, medical condition, cost, and provider rating.  The model will be used by the individual customer to identify an optimal provider in term of affordability and rating. In addition data will allow comparative analysis at regional or national levels, conditions to identify outliers (ex: fraudulent claims by provider). 
 Data Understanding
 Data is in CSV format and consist of multiple files. Data is unstructured, but the files can be connected using various codes for providers, procedures, etc. The general assumptions are provider submitted Medicare claims are proportional with provider regular insurance claims and Medicare payments are proportional with insurance payments. 
@@ -20,13 +19,13 @@ https://www.cms.gov/Medicare/Quality-Initiatives-Patient-Assessment-Instruments/
 Data from various files will be summarized in a file that containing provider identification data, medical condition data, payment details, rating details.
 
 ## Modeling
-Use k-means/SVM/clustering  or tf-idf to build a model that can show prices for different regions, medical conditions, and provider ratings. Build a weighted model of all features to show a general score for each provider.  
+Use Random Forest and other algorithms to validate the model. Use Isolation Forest to identify the outliers. Review the outliers and rate them.
 
 ## Evaluation
 Select data for a limited numbers of providers and run the model to generate results. 
-Build a model with limited complexity, considering fewer features and test it.  Find the optimal model features, parameters and generalize the result for the entire data set. Evaluate if there are relative discrepancies between prices for similar conditions, identify most expensive procedures, build indicators to identify the best providers - build an index for  price/location/nr of discharges. Identify clusters for high/low cost providers and procedures.
+Build a model with limited complexity, considering fewer features and test it.  Find the optimal model features, parameters and generalize the result for the entire data set. Evaluate if there are relative discrepancies between prices for similar conditions, identify most expensive procedures, build indicators to identify the best providers.
 
 Backup data: https://data.cms.gov/Medicare/Inpatient-Prospective-Payment-System-IPPS-Provider/97k6-zzx3
-Deployment
 
+## Deployment
 The initial deployment will be in a Github repository and presented in a powerpoint format. 
